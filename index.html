@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Pop the Bubbles</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+  <div class="game-wrapper">
+    <div class="game" id="game">
+      <div class="needle" id="needle"></div>
+      <div class="game-area" id="game-area">
+      </div>
+    </div>
+    <div class="score">
+      <h2>Очки: <span id="score">0</span></h2>
+      <h2>Пропущено: <span id="lose">0</span></h2>
+      <h2>Ветер: <span id="wind"></span></h2>
+      <button class="start-btn" id="start-game">Старт</button>
+    </div>
+  </div>
+  <script src='main.js'></script>
+</body>
+</html>
+const speedInterval = setInterval(() => {
+  game.incLvl();
+}, 5000);
